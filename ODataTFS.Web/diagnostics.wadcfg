@@ -1,0 +1,65 @@
+﻿<DiagnosticMonitorConfiguration xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration"
+      configurationChangePollInterval="PT1M"
+      overallQuotaInMB="8192">
+  <DiagnosticInfrastructureLogs bufferQuotaInMB="1024"
+     scheduledTransferLogLevelFilter="Verbose"
+     scheduledTransferPeriod="PT1M" />
+  <Logs bufferQuotaInMB="512"
+     scheduledTransferLogLevelFilter="Verbose"
+     scheduledTransferPeriod="PT1M" />
+  <Directories bufferQuotaInMB="1024"
+     scheduledTransferPeriod="PT1M">
+
+    <!-- These three elements specify the special directories 
+           that are set up for the log types -->
+    <CrashDumps container="wad-crash-dumps" directoryQuotaInMB="256" />
+    <FailedRequestLogs container="wad-failedreqlogfiles" directoryQuotaInMB="256" />
+    <IISLogs container="wad-iis-logfiles" directoryQuotaInMB="256" />
+
+    <!-- For regular directories the DataSources element is used -->
+    <!--<DataSources>
+      <DirectoryConfiguration container="wad-panther" directoryQuotaInMB="128">
+        --><!-- Absolute specifies an absolute path with optional environment expansion --><!--
+        <Absolute expandEnvironment="true" path="%SystemRoot%\system32\sysprep\Panther" />
+      </DirectoryConfiguration>
+      <DirectoryConfiguration container="wad-custom" directoryQuotaInMB="128">
+        --><!-- LocalResource specifies a path relative to a local 
+                 resource defined in the service definition --><!--
+        <LocalResource name="MyLoggingLocalResource" relativePath="logs" />
+      </DirectoryConfiguration>
+    </DataSources>-->
+  </Directories>
+  <PerformanceCounters bufferQuotaInMB="512" scheduledTransferPeriod="PT1M">
+    <!-- The counter specifier is in the same format as the imperative 
+           diagnostics configuration API -->
+    <PerformanceCounterConfiguration counterSpecifier="\Processor(_Total)\% Processor Time" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\.NET CLR Exceptions(_Global_)\# Exceps Thrown / sec" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\.NET CLR Memory(_Global_)\% Time in GC" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Application Restarts" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Request Execution Time" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Requests Disconnected" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Worker Process Restarts" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Requests Total" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Requests/Sec" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\ASP.NET v4.0.30319\Request Execution Time" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\ASP.NET v4.0.30319\Request Wait Time" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\ASP.NET v4.0.30319\Requests Current" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\ASP.NET v4.0.30319\Requests Queued" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\ASP.NET v4.0.30319\Requests Rejected" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\Memory\Committed Bytes" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\TCPv4\Connection Failures" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\TCPv4\Connections Established" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\TCPv4\Connections Reset" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\TCPv4\Segments Sent/sec" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\Network Interface(*)\Bytes Received/sec" sampleRate="PT60S" />
+    <PerformanceCounterConfiguration counterSpecifier="\Network Interface(*)\Bytes Sent/sec" sampleRate="PT60S" />
+  </PerformanceCounters>
+  <WindowsEventLog bufferQuotaInMB="512"
+     scheduledTransferLogLevelFilter="Warning"
+     scheduledTransferPeriod="PT1M">
+    <!-- The event log name is in the same format as the imperative 
+           diagnostics configuration API -->
+    <DataSource name="System!*" />
+    <DataSource name="Application!*" />
+  </WindowsEventLog>
+</DiagnosticMonitorConfiguration>

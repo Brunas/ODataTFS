@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="ODataTFS.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" schemaVersion="2012-10.1.8" osVersion="*" osFamily="3">
+  <Role name="ODataTFS.Web">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <!-- 
+      TFS endpoint goes here. 
+      Use https://visualstudio.com for Team Foundation Service (subdomain added in service code during runtime).
+      Example local endpoint: https://tfs:8080/tfs
+      -->
+      <Setting name="ODataTFS.TfsServer" value="https://visualstudio.com" />
+      <Setting name="ODataTFS.AuthProvider" value="Microsoft.Samples.DPE.ODataTFS.Web.Infrastructure.TFSAuthProvider" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="odata.cloudapp.net" thumbprint="E6046353D9B34DDD07AC78B3022AF240EDC48DF0" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

@@ -1,0 +1,55 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataTFS.Web", "ODataTFS.Web\ODataTFS.Web.csproj", "{51E5AF67-44DD-440F-BE6A-551001410747}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataTFS.Model", "ODataTFS.Model\ODataTFS.Model.csproj", "{5250B292-9A4A-4B8D-89B9-34808157C0FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataTFS.ConsoleClient", "ODataTFS.ConsoleClient\ODataTFS.ConsoleClient.csproj", "{C96939CE-E56B-41B3-9D34-CE7A39DF8160}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://cigpllprj01:8080/tfs/cig
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ODataTFS.Web\\ODataTFS.Web.csproj
+		SccProjectName1 = ODataTFS.Web
+		SccLocalPath1 = ODataTFS.Web
+		SccProjectUniqueName2 = ODataTFS.Model\\ODataTFS.Model.csproj
+		SccProjectName2 = ODataTFS.Model
+		SccLocalPath2 = ODataTFS.Model
+		SccProjectUniqueName3 = ODataTFS.ConsoleClient\\ODataTFS.ConsoleClient.csproj
+		SccProjectName3 = ODataTFS.ConsoleClient
+		SccLocalPath3 = ODataTFS.ConsoleClient
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Azure|Any CPU = Azure|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51E5AF67-44DD-440F-BE6A-551001410747}.Azure|Any CPU.ActiveCfg = Azure|Any CPU
+		{51E5AF67-44DD-440F-BE6A-551001410747}.Azure|Any CPU.Build.0 = Azure|Any CPU
+		{51E5AF67-44DD-440F-BE6A-551001410747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E5AF67-44DD-440F-BE6A-551001410747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51E5AF67-44DD-440F-BE6A-551001410747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51E5AF67-44DD-440F-BE6A-551001410747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Azure|Any CPU.ActiveCfg = Azure|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Azure|Any CPU.Build.0 = Azure|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C96939CE-E56B-41B3-9D34-CE7A39DF8160}.Azure|Any CPU.ActiveCfg = Azure|Any CPU
+		{C96939CE-E56B-41B3-9D34-CE7A39DF8160}.Azure|Any CPU.Build.0 = Azure|Any CPU
+		{C96939CE-E56B-41B3-9D34-CE7A39DF8160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C96939CE-E56B-41B3-9D34-CE7A39DF8160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C96939CE-E56B-41B3-9D34-CE7A39DF8160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C96939CE-E56B-41B3-9D34-CE7A39DF8160}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

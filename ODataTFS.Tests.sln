@@ -1,0 +1,70 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataTFS.Model", "ODataTFS.Model\ODataTFS.Model.csproj", "{5250B292-9A4A-4B8D-89B9-34808157C0FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataTFS.Model.Tests", "ODataTFS.Model.Tests\ODataTFS.Model.Tests.csproj", "{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E24C8814-288C-45CF-8ECA-3FAD229ECEF8}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E38276B6-C74B-47A6-BE96-5682AA92CDCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{18AA2674-EBBE-47A4-A97E-963C619B645C}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+		Staging|Any CPU = Staging|Any CPU
+		Staging|Mixed Platforms = Staging|Mixed Platforms
+		Staging|x86 = Staging|x86
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Release|x86.ActiveCfg = Release|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Staging|Any CPU.ActiveCfg = Azure|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Staging|Any CPU.Build.0 = Azure|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Staging|Mixed Platforms.ActiveCfg = Azure|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Staging|Mixed Platforms.Build.0 = Azure|Any CPU
+		{5250B292-9A4A-4B8D-89B9-34808157C0FF}.Staging|x86.ActiveCfg = Azure|Any CPU
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}.Release|x86.ActiveCfg = Release|Any CPU
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}.Staging|Any CPU.ActiveCfg = Release|Any CPU
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}.Staging|Any CPU.Build.0 = Release|Any CPU
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}.Staging|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}.Staging|Mixed Platforms.Build.0 = Release|Any CPU
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC}.Staging|x86.ActiveCfg = Release|Any CPU
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	GlobalSection(NestedProjects) = preSolution
+		{E24C8814-288C-45CF-8ECA-3FAD229ECEF8} = {E38276B6-C74B-47A6-BE96-5682AA92CDCF}
+		{F3EC88CF-DCAC-486A-AA49-B239F319F0CC} = {E38276B6-C74B-47A6-BE96-5682AA92CDCF}
+EndGlobal
