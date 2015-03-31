@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ODataTFS.ConsoleClient/obj/Debug
+/ODataTFS.Model/obj/Debug
+/ODataTFS.Web/obj/Debug
